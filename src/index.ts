@@ -1,7 +1,7 @@
-console.log('Hello from TS')
+console.log("Hello from TS");
 
-const x:string = 'hello'
+const x: string = "hello";
 
 const nf = async () => {
-    console.log('hello')
-}
+  console.log("hello");
+};
