@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node src/index.ts",
+    "start": "NODE_ENV=development nodemon --exec ts-node src/index.ts",
+    "start:prod": "NODE_ENV=production nodemon --exec ts-node src/index.ts",
+    "start:test": "NODE_ENV=test nodemon --exec ts-node src/index.ts",
     "build": "rm -fr dist && tsc",
     "format": "prettier --write src/**/*.ts"
   },
@@ -12,6 +14,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.5.9",
+    "dotenv": "^16.3.1",
     "nodemon": "^3.0.1",
     "prettier": "^3.0.2",
     "ts-node": "^10.9.1",
