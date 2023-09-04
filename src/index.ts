@@ -1,7 +1,6 @@
-console.log("Hello from TS");
+import * as dotenv from 'dotenv'
+const nodeEnv = process.env.NODE_ENV || 'development'
+const configPath = `/.env.${nodeEnv}`
+dotenv.config({ path: configPath})
 
-const x: string = "hello";
-
-const nf = async () => {
-  console.log("hello");
-};
+console.log(process.env)
