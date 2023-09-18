@@ -1,4 +1,6 @@
-import type { Knex } from "knex";
+import type { Knex } from "knex"
+import { join } from 'path'
+
 
 // Update with your config settings.
 
@@ -6,7 +8,8 @@ import type { Knex } from "knex";
   development: {
     client: "sqlite3",
     connection: {
-      filename: "./db.sqlite3"
+      filename: join(__dirname, "/db.sqlite3")
+
     },
     useNullAsDefault: true
   },

@@ -8,4 +8,4 @@ dotenv.config({ path: configPath})
 
 console.log(process.env.USER_NOW)
 console.log(configPath)
-// db('users').then(console.log)
+db('users').then(console.log)
